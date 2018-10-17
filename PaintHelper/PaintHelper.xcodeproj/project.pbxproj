@@ -13,6 +13,7 @@
 		3229ED65211C936000C0FDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3229ED63211C936000C0FDE5 /* Main.storyboard */; };
 		3229ED67211C936000C0FDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3229ED66211C936000C0FDE5 /* Assets.xcassets */; };
 		3229ED6A211C936000C0FDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3229ED68211C936000C0FDE5 /* LaunchScreen.storyboard */; };
+		3259ADF92175D62F00EFA943 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259ADF82175D62F00EFA943 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		3229ED66211C936000C0FDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3229ED69211C936000C0FDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3229ED6B211C936000C0FDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3259ADF72175D62F00EFA943 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		3259ADF82175D62F00EFA943 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				3229ED5E211C936000C0FDE5 /* AppDelegate.m */,
 				3229ED60211C936000C0FDE5 /* ViewController.h */,
 				3229ED61211C936000C0FDE5 /* ViewController.m */,
+				3259ADF72175D62F00EFA943 /* EditViewController.h */,
+				3259ADF82175D62F00EFA943 /* EditViewController.m */,
 				3229ED63211C936000C0FDE5 /* Main.storyboard */,
 				3229ED66211C936000C0FDE5 /* Assets.xcassets */,
 				3229ED68211C936000C0FDE5 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3259ADF92175D62F00EFA943 /* EditViewController.m in Sources */,
 				3229ED62211C936000C0FDE5 /* ViewController.m in Sources */,
 				3229ED5F211C936000C0FDE5 /* AppDelegate.m in Sources */,
 				3229ED5C211C936000C0FDE5 /* main.m in Sources */,
@@ -312,6 +318,7 @@
 				3229ED70211C936000C0FDE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
