@@ -7,10 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+
+
+#import "Measure/MeasureViewController.h"
+#import "Projects/ProjectsViewController.h"
+#import "Tools/ToolsViewController.h"
+
 @interface AppDelegate ()
-@property (strong, nonatomic) ViewController *vc;
-@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) ProjectsViewController *projectsVC;
+@property (strong, nonatomic) MeasureViewController *measureVC;
+@property (strong, nonatomic) ToolsViewController *toolsVC;
 @end
 
 @implementation AppDelegate
@@ -18,13 +24,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _vc = [[ViewController alloc] init];
-    self.navigationController = [[UINavigationController alloc] init];
     
+    _projectsVC = [[ProjectsViewController alloc] init];
+    _projectsVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Projects" image:nil tag:0];
+    
+    _measureVC = [[MeasureViewController alloc] init];
+    _measureVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Measure" image:nil tag:1];
+    
+    _toolsVC = [[ToolsViewController alloc] init];
+    _toolsVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tools" image:nil tag:2];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController addChildViewController:_projectsVC];
+    [tabBarController addChildViewController:_measureVC];
+    [tabBarController addChildViewController:_toolsVC];
+
     self.window = [[UIWindow alloc] init];
     [self.window makeKeyWindow];
     [self.window setFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = tabBarController;
     return YES;
 }
 

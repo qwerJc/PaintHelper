@@ -14,6 +14,9 @@
 		3229ED67211C936000C0FDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3229ED66211C936000C0FDE5 /* Assets.xcassets */; };
 		3229ED6A211C936000C0FDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3229ED68211C936000C0FDE5 /* LaunchScreen.storyboard */; };
 		3259ADF92175D62F00EFA943 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259ADF82175D62F00EFA943 /* EditViewController.m */; };
+		326B1B0A217E09FB009F7089 /* MeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B09217E09FB009F7089 /* MeasureViewController.m */; };
+		326B1B0D217E0A02009F7089 /* ToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0C217E0A02009F7089 /* ToolsViewController.m */; };
+		326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0F217E0A10009F7089 /* ProjectsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		3229ED6B211C936000C0FDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3259ADF72175D62F00EFA943 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		3259ADF82175D62F00EFA943 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		326B1B08217E09FB009F7089 /* MeasureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureViewController.h; sourceTree = "<group>"; };
+		326B1B09217E09FB009F7089 /* MeasureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureViewController.m; sourceTree = "<group>"; };
+		326B1B0B217E0A02009F7089 /* ToolsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsViewController.h; sourceTree = "<group>"; };
+		326B1B0C217E0A02009F7089 /* ToolsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsViewController.m; sourceTree = "<group>"; };
+		326B1B0E217E0A10009F7089 /* ProjectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		326B1B0F217E0A10009F7089 /* ProjectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,9 @@
 				3229ED5E211C936000C0FDE5 /* AppDelegate.m */,
 				3229ED60211C936000C0FDE5 /* ViewController.h */,
 				3229ED61211C936000C0FDE5 /* ViewController.m */,
+				326B1B07217E09E8009F7089 /* Projects */,
+				326B1B05217E09CD009F7089 /* Measure */,
+				326B1B06217E09DB009F7089 /* Tools */,
 				3259ADF72175D62F00EFA943 /* EditViewController.h */,
 				3259ADF82175D62F00EFA943 /* EditViewController.m */,
 				3229ED63211C936000C0FDE5 /* Main.storyboard */,
@@ -82,6 +94,33 @@
 				3229ED5B211C936000C0FDE5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		326B1B05217E09CD009F7089 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				326B1B08217E09FB009F7089 /* MeasureViewController.h */,
+				326B1B09217E09FB009F7089 /* MeasureViewController.m */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		326B1B06217E09DB009F7089 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				326B1B0B217E0A02009F7089 /* ToolsViewController.h */,
+				326B1B0C217E0A02009F7089 /* ToolsViewController.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		326B1B07217E09E8009F7089 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				326B1B0E217E0A10009F7089 /* ProjectsViewController.h */,
+				326B1B0F217E0A10009F7089 /* ProjectsViewController.m */,
+			);
+			path = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326B1B0D217E0A02009F7089 /* ToolsViewController.m in Sources */,
+				326B1B0A217E09FB009F7089 /* MeasureViewController.m in Sources */,
 				3259ADF92175D62F00EFA943 /* EditViewController.m in Sources */,
 				3229ED62211C936000C0FDE5 /* ViewController.m in Sources */,
+				326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */,
 				3229ED5F211C936000C0FDE5 /* AppDelegate.m in Sources */,
 				3229ED5C211C936000C0FDE5 /* main.m in Sources */,
 			);
