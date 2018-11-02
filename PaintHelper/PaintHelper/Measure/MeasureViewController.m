@@ -7,9 +7,15 @@
 //
 
 #import "MeasureViewController.h"
+#import <Photos/Photos.h>
+// View
+#import "MeasureViewPhotoCollectionView.h"
+#import "MeasurePhotoViewController.h"
+// Model
+#import "ModelLoactor.h"
 
-@interface MeasureViewController ()
-
+@interface MeasureViewController ()<MeasureViewPhotoListDelegate>
+@property (strong, nonatomic) MeasureViewPhotoCollectionView *list;
 @end
 
 @implementation MeasureViewController
@@ -18,16 +24,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor orangeColor];
+    
+    _list = [[MeasureViewPhotoCollectionView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - [self getTabBarHeight])];
+    _list.delegate = self;
+    [self.view addSubview:_list];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (CGFloat)getTabBarHeight {
+    return self.tabBarController.tabBar.bounds.size.height;
 }
-*/
+
+- (void)viewWillAppear:(BOOL)animated {
+    // 获得相机胶卷
+    PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
+    NSLog(@"相簿名:%@", cameraRoll.localizedTitle);
+    
+    [_list setAlbumData:cameraRoll];
+}
+
+#pragma mark - MeasureViewPhotoListDelegate
+- (void)showMeasureViewWithImage:(UIImage *)image {
+    MeasurePhotoViewController *photoVC = [[MeasurePhotoViewController alloc] initWithImage:image];
+    [self presentViewController:photoVC animated:YES completion:nil];
+}
 
 @end

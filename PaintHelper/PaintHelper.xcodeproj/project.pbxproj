@@ -17,6 +17,10 @@
 		326B1B0A217E09FB009F7089 /* MeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B09217E09FB009F7089 /* MeasureViewController.m */; };
 		326B1B0D217E0A02009F7089 /* ToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0C217E0A02009F7089 /* ToolsViewController.m */; };
 		326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0F217E0A10009F7089 /* ProjectsViewController.m */; };
+		329822ED218BFC4C0020EFEF /* ModelLoactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 329822EB218BFC4C0020EFEF /* ModelLoactor.m */; };
+		329822F1218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329822F0218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m */; };
+		32AD3065218C4A4E00F1CB1C /* MeasurePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AD3064218C4A4E00F1CB1C /* MeasurePhotoViewController.m */; };
+		32F31402218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F31401218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,14 @@
 		326B1B0C217E0A02009F7089 /* ToolsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsViewController.m; sourceTree = "<group>"; };
 		326B1B0E217E0A10009F7089 /* ProjectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		326B1B0F217E0A10009F7089 /* ProjectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		329822EB218BFC4C0020EFEF /* ModelLoactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLoactor.m; sourceTree = "<group>"; };
+		329822EC218BFC4C0020EFEF /* ModelLoactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLoactor.h; sourceTree = "<group>"; };
+		329822EF218C2AC90020EFEF /* MeasureViewPhotoCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureViewPhotoCollectionView.h; sourceTree = "<group>"; };
+		329822F0218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureViewPhotoCollectionView.m; sourceTree = "<group>"; };
+		32AD3063218C4A4E00F1CB1C /* MeasurePhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasurePhotoViewController.h; sourceTree = "<group>"; };
+		32AD3064218C4A4E00F1CB1C /* MeasurePhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasurePhotoViewController.m; sourceTree = "<group>"; };
+		32F31400218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureViewPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		32F31401218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureViewPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,8 @@
 				3229ED5E211C936000C0FDE5 /* AppDelegate.m */,
 				3229ED60211C936000C0FDE5 /* ViewController.h */,
 				3229ED61211C936000C0FDE5 /* ViewController.m */,
+				329822EC218BFC4C0020EFEF /* ModelLoactor.h */,
+				329822EB218BFC4C0020EFEF /* ModelLoactor.m */,
 				326B1B07217E09E8009F7089 /* Projects */,
 				326B1B05217E09CD009F7089 /* Measure */,
 				326B1B06217E09DB009F7089 /* Tools */,
@@ -101,6 +115,9 @@
 			children = (
 				326B1B08217E09FB009F7089 /* MeasureViewController.h */,
 				326B1B09217E09FB009F7089 /* MeasureViewController.m */,
+				329822EE218C2A9D0020EFEF /* PhotoList */,
+				32AD3063218C4A4E00F1CB1C /* MeasurePhotoViewController.h */,
+				32AD3064218C4A4E00F1CB1C /* MeasurePhotoViewController.m */,
 			);
 			path = Measure;
 			sourceTree = "<group>";
@@ -121,6 +138,17 @@
 				326B1B0F217E0A10009F7089 /* ProjectsViewController.m */,
 			);
 			path = Projects;
+			sourceTree = "<group>";
+		};
+		329822EE218C2A9D0020EFEF /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				329822EF218C2AC90020EFEF /* MeasureViewPhotoCollectionView.h */,
+				329822F0218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m */,
+				32F31400218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.h */,
+				32F31401218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.m */,
+			);
+			path = PhotoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AD3065218C4A4E00F1CB1C /* MeasurePhotoViewController.m in Sources */,
 				326B1B0D217E0A02009F7089 /* ToolsViewController.m in Sources */,
+				32F31402218C3E2B00B4C6DA /* MeasureViewPhotoCollectionViewCell.m in Sources */,
 				326B1B0A217E09FB009F7089 /* MeasureViewController.m in Sources */,
 				3259ADF92175D62F00EFA943 /* EditViewController.m in Sources */,
 				3229ED62211C936000C0FDE5 /* ViewController.m in Sources */,
+				329822F1218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m in Sources */,
 				326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */,
 				3229ED5F211C936000C0FDE5 /* AppDelegate.m in Sources */,
+				329822ED218BFC4C0020EFEF /* ModelLoactor.m in Sources */,
 				3229ED5C211C936000C0FDE5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR4ZEKCW75;
 				INFOPLIST_FILE = PaintHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JC.PaintHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR4ZEKCW75;
 				INFOPLIST_FILE = PaintHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JC.PaintHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";

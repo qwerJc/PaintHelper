@@ -8,15 +8,15 @@
 
 #import "AppDelegate.h"
 
-
 #import "Measure/MeasureViewController.h"
 #import "Projects/ProjectsViewController.h"
 #import "Tools/ToolsViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 @property (strong, nonatomic) ProjectsViewController *projectsVC;
 @property (strong, nonatomic) MeasureViewController *measureVC;
 @property (strong, nonatomic) ToolsViewController *toolsVC;
+
 @end
 
 @implementation AppDelegate
@@ -35,6 +35,7 @@
     _toolsVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tools" image:nil tag:2];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.delegate = self;
     [tabBarController addChildViewController:_projectsVC];
     [tabBarController addChildViewController:_measureVC];
     [tabBarController addChildViewController:_toolsVC];
@@ -73,5 +74,12 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Tabbar Delegate
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    if ([[viewController class] isEqual:[MeasureViewController class]]) {
+        NSLog(@"测量");
+
+    }
+}
 
 @end
