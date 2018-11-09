@@ -36,10 +36,17 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     // 获得相机胶卷
-    PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
+//    PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil].lastObject;
+    PHAssetCollection *cameraRoll = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumScreenshots options:nil].lastObject;
+//    PHAssetCollectionSubtypeSmartAlbumUserLibrary PHAssetCollectionSubtypeSmartAlbumScreenshots
     NSLog(@"相簿名:%@", cameraRoll.localizedTitle);
     
     [_list setAlbumData:cameraRoll];
+    
+    PHFetchResult *customUserCollections = [PHCollectionList fetchTopLevelUserCollectionsWithOptions:nil];
+    for (PHAssetCollection *collection in customUserCollections) {
+        NSLog(@"相册名 :%@",collection.localizedTitle);
+    }
 }
 
 #pragma mark - MeasureViewPhotoListDelegate
