@@ -17,6 +17,8 @@
 		326B1B0A217E09FB009F7089 /* MeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B09217E09FB009F7089 /* MeasureViewController.m */; };
 		326B1B0D217E0A02009F7089 /* ToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0C217E0A02009F7089 /* ToolsViewController.m */; };
 		326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326B1B0F217E0A10009F7089 /* ProjectsViewController.m */; };
+		3271D3AB21992B2E00A3C577 /* MeasureAlbumListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271D3AA21992B2E00A3C577 /* MeasureAlbumListView.m */; };
+		3271D3AE21992B6300A3C577 /* MeasureAlbumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271D3AD21992B6300A3C577 /* MeasureAlbumButton.m */; };
 		327E0025219564BF001FD104 /* PickColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327E0024219564BF001FD104 /* PickColorView.m */; };
 		329822ED218BFC4C0020EFEF /* ModelLoactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 329822EB218BFC4C0020EFEF /* ModelLoactor.m */; };
 		329822F1218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329822F0218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m */; };
@@ -44,6 +46,10 @@
 		326B1B0C217E0A02009F7089 /* ToolsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsViewController.m; sourceTree = "<group>"; };
 		326B1B0E217E0A10009F7089 /* ProjectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		326B1B0F217E0A10009F7089 /* ProjectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		3271D3A921992B2E00A3C577 /* MeasureAlbumListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureAlbumListView.h; sourceTree = "<group>"; };
+		3271D3AA21992B2E00A3C577 /* MeasureAlbumListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureAlbumListView.m; sourceTree = "<group>"; };
+		3271D3AC21992B6300A3C577 /* MeasureAlbumButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureAlbumButton.h; sourceTree = "<group>"; };
+		3271D3AD21992B6300A3C577 /* MeasureAlbumButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureAlbumButton.m; sourceTree = "<group>"; };
 		327E0023219564BF001FD104 /* PickColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickColorView.h; sourceTree = "<group>"; };
 		327E0024219564BF001FD104 /* PickColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickColorView.m; sourceTree = "<group>"; };
 		329822EB218BFC4C0020EFEF /* ModelLoactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLoactor.m; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 			children = (
 				326B1B08217E09FB009F7089 /* MeasureViewController.h */,
 				326B1B09217E09FB009F7089 /* MeasureViewController.m */,
+				3271D3A821992B2E00A3C577 /* AlbumList */,
 				329822EE218C2A9D0020EFEF /* PhotoList */,
 				329E41D02191858600449489 /* MeasureView */,
 				329E41D42191859000449489 /* ToolsView */,
@@ -144,6 +151,17 @@
 				326B1B0F217E0A10009F7089 /* ProjectsViewController.m */,
 			);
 			path = Projects;
+			sourceTree = "<group>";
+		};
+		3271D3A821992B2E00A3C577 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				3271D3AC21992B6300A3C577 /* MeasureAlbumButton.h */,
+				3271D3AD21992B6300A3C577 /* MeasureAlbumButton.m */,
+				3271D3A921992B2E00A3C577 /* MeasureAlbumListView.h */,
+				3271D3AA21992B2E00A3C577 /* MeasureAlbumListView.m */,
+			);
+			path = AlbumList;
 			sourceTree = "<group>";
 		};
 		329822EE218C2A9D0020EFEF /* PhotoList */ = {
@@ -258,8 +276,10 @@
 				3229ED62211C936000C0FDE5 /* ViewController.m in Sources */,
 				329822F1218C2AC90020EFEF /* MeasureViewPhotoCollectionView.m in Sources */,
 				326B1B10217E0A10009F7089 /* ProjectsViewController.m in Sources */,
+				3271D3AE21992B6300A3C577 /* MeasureAlbumButton.m in Sources */,
 				3229ED5F211C936000C0FDE5 /* AppDelegate.m in Sources */,
 				329822ED218BFC4C0020EFEF /* ModelLoactor.m in Sources */,
+				3271D3AB21992B2E00A3C577 /* MeasureAlbumListView.m in Sources */,
 				3229ED5C211C936000C0FDE5 /* main.m in Sources */,
 				329E41D7219187E400449489 /* MeasureToolsView.m in Sources */,
 			);

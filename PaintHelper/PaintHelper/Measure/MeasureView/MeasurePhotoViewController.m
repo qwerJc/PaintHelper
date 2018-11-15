@@ -79,7 +79,6 @@
 // scale between minimum and maximum. called after any 'bounce' animations缩放完毕的时候调用。
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
     //把当前的缩放比例设进ZoomScale，以便下次缩放时实在现有的比例的基础上
-    NSLog(@"scale is %f",scale);
     [_scrollView setZoomScale:scale animated:NO];
 }
 

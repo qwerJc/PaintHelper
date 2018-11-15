@@ -46,6 +46,7 @@
     options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
     _assetsFetchResults = [PHAsset fetchAssetsInAssetCollection:album options:options];
     
+    [_collectionView reloadData];
 }
 #pragma mark - Collection Datasource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -55,7 +56,7 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MeasureViewPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"VideoListCollectionViewCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor grayColor];
-    [cell setupWithAsset:_assetsFetchResults[indexPath.row]];
+    [cell setupWithAsset:_assetsFetchResults[[_assetsFetchResults count] - 1 - indexPath.row]];
     return cell;
 }
 
@@ -64,9 +65,9 @@
     PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];
     option.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
     option.resizeMode = PHImageRequestOptionsResizeModeNone;
-    
+        
     PHCachingImageManager *imageManager = [[PHCachingImageManager alloc] init];
-    [imageManager requestImageForAsset:_assetsFetchResults[indexPath.row]
+    [imageManager requestImageForAsset:_assetsFetchResults[[_assetsFetchResults count] - 1 - indexPath.row]
                             targetSize:CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))
                            contentMode:PHImageContentModeAspectFill
                                options:option
